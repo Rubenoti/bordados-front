@@ -1,0 +1,77 @@
+.firstNav {
+  background: linear-gradient(
+    180deg,
+    rgba(139, 67, 164, 0.95) 0%,
+    rgba(228, 182, 244, 0.35) 100%
+  );
+}
+.secondNav {
+  background-color: #f6e4f9;
+}
+.row {
+  width: 100%;
+}
+.iconBox {
+  display: flex;
+  height: 25px;
+  span {
+    padding: 4px;
+  }
+}
+.fa-facebook {
+  color: #4c4053;
+  font-size: 25px;
+  padding-right: 1em;
+}
+.fa-instagram {
+  color: #4c4053;
+  font-size: 25px;
+  padding-right: 1em;
+}
+
+.fa-shopify {
+  color: #4c4053;
+  font-size: 25px;
+}
+.fa-envelope {
+  padding-left: 10px;
+  color: #4c4053;
+  font-size: 18px;
+  padding: 5px;
+  p {
+    font-size: 18px;
+  }
+  span {
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+.fa-whatsapp {
+  color: #4c4053;
+  font-size: 18px;
+  padding: 5px;
+  p {
+    font-size: 18px;
+  }
+  span {
+    padding: 1px;
+  }
+}
+
+.fa-shopping-cart {
+  color: #4c4053;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.secondPart {
+  height: 120px;
+}
+.logo {
+  position: relative;
+  width: 170px;
+  height: 140px;
+  right: 30px;
+  padding: 2px;
+  mix-blend-mode: darken;
+}
