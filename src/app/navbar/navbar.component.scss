@@ -5,9 +5,11 @@
     rgba(139, 67, 164, 0.95) 0%,
     rgba(228, 182, 244, 0.35) 100%
   );
+  padding-left: 2em;
 }
 .secondNav {
   background-color: #f6e4f9;
+  padding-left: 2em;
 }
 .thirdNav {
   height: 45px;
@@ -47,24 +49,17 @@
 .fa-envelope {
   padding-left: 10px;
   color: #4c4053;
-  font-size: 18px;
-  padding: 5px;
-  p {
-    font-size: 18px;
-  }
+  padding: 3px;
   span {
     padding: 15px;
-    font-size: 15px;
+    font-size: 1em;
   }
 }
 .fa-whatsapp {
   color: #4c4053;
-  font-size: 18px;
-  padding: 5px;
-  p {
-    font-size: 18px;
-  }
+  padding: 3px;
   span {
+    font-size: 1em;
     padding: 1px;
   }
 }
@@ -79,11 +74,8 @@
   height: 120px;
 }
 .logo {
-  position: relative;
   width: 170px;
   height: 140px;
-  right: 30px;
-  padding: 2px;
   mix-blend-mode: darken;
 }
 .selfie {
@@ -92,8 +84,17 @@
   border-radius: 100%;
 }
 .headText {
+  position: relative;
+  top: 15px;
   @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
   font-family: "Roboto Mono", monospace;
 }
-.headImg {
+
+@media all and (max-width: 991.98px) {
+  #selfie {
+    display: none;
+  }
+  #icon {
+    display: none;
+  }
 }

@@ -1,15 +1,15 @@
 <nav class="navbar navbar-light bg-light firstNav">
-  <div class="container firstPart">
+  <div class="container-fluid firstPart">
     <div class="row align-items-start">
       <div class="col iconBox">
         <i class="fab fa-facebook"></i>
         <i class="fab fa-instagram"></i>
         <i class="fab fa-shopify"></i>
       </div>
-      <div class="col iconBox">
+      <div class="col iconBox" id="icon">
         <i class="fas fa-envelope"><span>info@bordados.com</span>
         </i>
-        <i class="fab fa-whatsapp"><span> +34666666666</span>
+        <i class="fab fa-whatsapp"><span>+34666666666</span>
         </i>
       </div>
       <div class="col iconBox justify-content-end"><span>Tu cuenta</span>
@@ -18,24 +18,55 @@
     </div>
   </div>
 </nav>
-<nav class="navbar navbar-light bg-light secondNav">
-  <div class="container secondPart">
+<nav class="navbar navbar-light secondNav ">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-9">
-        <img src="../../assets/home-img/Logo Infantes.jpg" class="img-fluid logo" alt="...">
+      <div class="col-9 ">
+        <img src="../../assets/navbar-img/Logo Infantes.jpg" class="img-fluid logo" alt="...">
       </div>
-      <div class="col-1 headImg">
-        <img src="../../assets/home-img/fb1.JPG" class="img-fluid selfie" alt="...">
+      <div class="col-1 p-3 headImg">
+        <img src="../../assets/navbar-img/fb1.JPG" id="selfie" class="img-fluid selfie" alt="...">
       </div>
-      <div class="col-2 headText">
+      <div class="col-2 p-2 headText" id="selfie">
         <h5>José Infantes</h5>
         <p>"Una vida dedicada a los hilos"</p>
       </div>
     </div>
   </div>
 </nav>
-<nav class="navbar navbar-light bg-light thirdNav">
-  <div class="container thirdPart">
-
+<nav class="navbar navbar-expand-lg navbar-light thirdNav">
+  <div class="container-fluid thirdPart">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color:black; font-weight: bold;">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color:black; font-weight: bold;">
+            Trabajos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Bordado en oro</a></li>
+            <li><a class="dropdown-item" href="#">Sastrería</a></li>
+            <li><a class="dropdown-item" href="#">Cordonería</a></li>
+            <li><a class="dropdown-item" href="#">Iconos Bizantinos</a></li>
+            <li><a class="dropdown-item" href="#">Restauración Textil</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav p-4">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" style="color:black; font-weight: bold;">Conóceme</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color:black; font-weight: bold;">Contacto</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

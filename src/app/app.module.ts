@@ -10,9 +10,19 @@ import {
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
 
+import { GalleryModule } from 'ng-gallery';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LightboxModule } from 'ng-gallery/lightbox';
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    LightboxModule,
+    GalleryModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
