@@ -13,6 +13,7 @@ import {
 import { GalleryModule } from 'ng-gallery';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LightboxModule } from 'ng-gallery/lightbox';
+
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent, FooterComponent],
   imports: [
