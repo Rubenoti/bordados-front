@@ -13,9 +13,11 @@ import {
 import { GalleryModule } from 'ng-gallery';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LightboxModule } from 'ng-gallery/lightbox';
+import { ConocemeComponent } from './conoceme/conoceme.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavbarComponent, FooterComponent],
+  declarations: [AppComponent, HomeComponent, NavbarComponent, FooterComponent, ConocemeComponent, ContactoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

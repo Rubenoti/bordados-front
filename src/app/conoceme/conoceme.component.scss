@@ -1,0 +1,30 @@
+.main {
+  padding-top: 3%;
+}
+
+.nameTitle {
+  display: block;
+  max-height: 5rem;
+  max-width: 50rem;
+  border-radius: 70%;
+  font-family: "Quintessential", cursive;
+  background: linear-gradient(
+    270deg,
+    rgba(231, 142, 220, 0.029) 17.14%,
+    rgba(228, 29, 101, 0.29) 48.69%,
+    rgba(224, 128, 213, 0.029) 81.59%
+  );
+  text-align: center;
+  h2 {
+    padding: 2%;
+  }
+}
+.principal {
+  padding-top: 5%;
+  .img {
+  }
+  .imgText {
+    font-size: 1.2rem;
+    font-family: "Quintessential", cursive;
+  }
+}

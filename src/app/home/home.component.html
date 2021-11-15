@@ -44,7 +44,7 @@
 
 <div class="grid">
   <div class="item">
-    <a href="#0" aria-labelledby="Bordados en oro"></a>
+    <a href="#0" aria-labelledby="Bordados en oro" data-bs-toggle="modal" data-bs-target="#staticBackdropLabel"></a>
     <img src='../../assets/home-img/card-1.jpg' alt=''>
     <div class="item__overlay">
       <h3 id="person1" aria-hidden="true">Bordados en oro</h3>
@@ -53,43 +53,243 @@
           magna aliqua.</p>
       </div>
     </div>
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropLabel" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center" id="staticBackdropLabel">Bordados en oro</h5>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-1">
+                </div>
+                <div id="caruselModal" class="carousel slide carousel-fade carouselModal" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/carrousel-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#caruselModal"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#caruselModal"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="col-5" id="textModal">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, rem vero harum voluptate et
+                  exercitationem? Culpa similique, assumenda nihil velit natus porro cum incidunt, modi laudantium
+                  possimus praesentium ipsa. Tempore.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modalButton" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
   <div class="item">
-    <a href="#0" aria-labelledby="Sastrería"></a>
+    <a href="#1" aria-labelledby="Sastrería" data-bs-toggle="modal" data-bs-target="#staticBackdropLabel1"></a>
     <img src='../../assets/home-img/card-1.jpg' alt=''>
     <div class="item__overlay">
-      <h3 id="person2" aria-hidden="true">Sastrería</h3>
+      <h3 id="person1" aria-hidden="true">Sastreria</h3>
       <div class="item__body">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.</p>
       </div>
     </div>
-  </div>
-  <div class="item">
-    <a href="#0" aria-labelledby="Cordonería"></a>
-    <img src='../../assets/home-img/card-1.jpg' alt=''>
-    <div class="item__overlay">
-      <h3 id="person3" aria-hidden="true">Cordonería</h3>
-      <div class="item__body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipis1cing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna aliqua.</p>
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropLabel1" tabindex="-1"
+      aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center" id="staticBackdropLabel1">Sastrería</h5>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-1">
+                </div>
+                <div id="caruselModal2" class="carousel slide carousel-fade carouselModal" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/carrousel-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#caruselModal2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#caruselModal2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="col-5" id="textModal">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, rem vero harum voluptate et
+                  exercitationem? Culpa similique, assumenda nihil velit natus porro cum incidunt, modi laudantium
+                  possimus praesentium ipsa. Tempore.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modalButton" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
   <div class="item">
-    <a href="#0" aria-labelledby="Iconos bizantinos"></a>
+    <a href="#2" aria-labelledby="Cordonería" data-bs-toggle="modal" data-bs-target="#staticBackdropLabel2"></a>
     <img src='../../assets/home-img/card-1.jpg' alt=''>
     <div class="item__overlay">
-      <h3 id="person4" aria-hidden="true">Iconos bizantinos</h3>
+      <h3 id="person2" aria-hidden="true">Cordonería</h3>
       <div class="item__body">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.</p>
       </div>
     </div>
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropLabel2" tabindex="-1"
+      aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center" id="staticBackdropLabel2">Cordonería</h5>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-1">
+                </div>
+                <div id="caruselModal3" class="carousel slide carousel-fade carouselModal" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/carrousel-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#caruselModal3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#caruselModal3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="col-5" id="textModal">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, rem vero harum voluptate et
+                  exercitationem? Culpa similique, assumenda nihil velit natus porro cum incidunt, modi laudantium
+                  possimus praesentium ipsa. Tempore.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modalButton" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
   <div class="item">
-    <a href="#0" aria-labelledby="Restauriación textil"></a>
+    <a href="#3" aria-labelledby="Iconos bizantinos" data-bs-toggle="modal" data-bs-target="#staticBackdropLabel3"></a>
+    <img src='../../assets/home-img/card-1.jpg' alt=''>
+    <div class="item__overlay">
+      <h3 id="person3" aria-hidden="true">Iconos bizantinos</h3>
+      <div class="item__body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+      </div>
+    </div>
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropLabel3" tabindex="-1"
+      aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center" id="staticBackdropLabel">Iconos bizantinos</h5>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-1">
+                </div>
+                <div id="caruselModal4" class="carousel slide carousel-fade carouselModal" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/carrousel-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#caruselModal4"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#caruselModal4"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="col-5" id="textModal">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, rem vero harum voluptate et
+                  exercitationem? Culpa similique, assumenda nihil velit natus porro cum incidunt, modi laudantium
+                  possimus praesentium ipsa. Tempore.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modalButton" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <a href="#4" aria-labelledby="Restauración textil" data-bs-toggle="modal"
+      data-bs-target="#staticBackdropLabel4"></a>
     <img src='../../assets/home-img/card-1.jpg' alt=''>
     <div class="item__overlay">
       <h3 id="person4" aria-hidden="true">Restauración textil</h3>
@@ -98,15 +298,78 @@
           magna aliqua.</p>
       </div>
     </div>
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropLabel4" tabindex="-1"
+      aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center" id="staticBackdropLabel4">Restauración textil</h5>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-1">
+                </div>
+                <div id="caruselModal5" class="carousel slide carousel-fade carouselModal" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/carrousel-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" id="modalImg">
+                      <img src="../../assets/home-img/card-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#caruselModal5"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#caruselModal5"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="col-5" id="textModal">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, rem vero harum voluptate et
+                  exercitationem? Culpa similique, assumenda nihil velit natus porro cum incidunt, modi laudantium
+                  possimus praesentium ipsa. Tempore.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modalButton" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
   <div class="item">
-    <a href="#0" aria-labelledby="Tienda"></a>
+    <a href="#5" aria-labelledby="Tienda" data-bs-toggle="modal" data-bs-target="#staticBackdropLabel5"></a>
     <img src='../../assets/home-img/card-1.jpg' alt=''>
     <div class="item__overlay">
-      <h3 id="person4" aria-hidden="true">Tienda</h3>
+      <h3 id="person5" aria-hidden="true">Tienda</h3>
       <div class="item__body">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.</p>
+      </div>
+    </div>
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropLabel5" tabindex="-1"
+      aria-labelledby="staticBackdropLabel5" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center" id="staticBackdropLabel">Tienda</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modalButton" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -116,21 +379,26 @@
 <div class="container-fluid bgColor">
   <div class="container-fluid aboutMe">
     <div>
-      <a href="#"><button type="button" id="but">Conóceme</button></a>
+
+      <button type="button" class="button-1" id="but" [routerLink]="['/conoceme']"
+        routerLinkActive="router-link-active">Conóceme</button>
     </div>
   </div>
 </div>
 <!--interviews-->
+
 <!--Sectión title-->
 <div class="d-flex justify-content-center interviews-title">
   Comparto contigo algunas entrevistas
 </div>
+
 <!--Posts-->
 <div class="container-fluid interviews-post">
   <div class="row">
     <div class="col-7" id="description"><span>En Castilla la Mancha Televisión</span>
       <br><br>
-      <p>En este reportaje de la televisión manchega aparecemos varios artesanos y contamos nuestras experiencias y
+      <p>En este reportaje de la televisión manchega aparecemos varios artesanos y contamos nuestras
+        experiencias y
         oficios de cómo damos esa vida y esencia al Cristo Cautivo.
         A partir del 1:47 resumo mi trabajo muy brevemente</p>
     </div>
@@ -160,13 +428,15 @@
     </div>
     <div class="col-7" id="description2"><span>En Castilla la Mancha Televisión</span>
       <br><br>
-      <p>En este reportaje de la televisión manchega aparecemos varios artesanos y contamos nuestras experiencias y
+      <p>En este reportaje de la televisión manchega aparecemos varios artesanos y contamos nuestras
+        experiencias y
         oficios de cómo damos esa vida y esencia al Cristo Cautivo.
         A partir del 1:47 resumo mi trabajo muy brevemente</p>
     </div>
     <div class="col-7" id="description3"><span>En Castilla la Mancha Televisión</span>
       <br><br>
-      <p>En este reportaje de la televisión manchega aparecemos varios artesanos y contamos nuestras experiencias y
+      <p>En este reportaje de la televisión manchega aparecemos varios artesanos y contamos nuestras
+        experiencias y
         oficios de cómo damos esa vida y esencia al Cristo Cautivo.
         A partir del 1:47 resumo mi trabajo muy brevemente</p>
     </div>
@@ -181,97 +451,6 @@
           <cite>Manto de la virgen de la antigua</cite>
         </figcaption>
       </figure>
-    </div>
-  </div>
-</div>
-<!--Sections-->
-<!--Bordado en Oro-->
-<div class="container-fluid g-box" style="background-color: #C09CCD;">
-  <h1>Bordado en oro</h1>
-  <div class="row">
-    <div class="col">
-      <gallery style="background-color: hsl(300, 16%, 96%); width:auto;" [items]="items" thumbPosition="left"
-        disablethumb="false" imageSize="cover">
-      </gallery>
-    </div>
-    <div class="col">
-      <p>Bordados Infantes es un taller de ornamentos para la liturgia y aderezo de imagenes de
-        culto totalmente artesano y con más de 25 años de vida. Trabajamos de forma tradicinal nuestras prendas,
-        poniendo
-        todo esmero y cuidado para conseguir las mejores
-        resultadosen nuestros trabajos.</p>
-    </div>
-  </div>
-</div>
-<!--Sastrería-->
-<div class="container-fluid g-box" style="background-color: #F6E4F9;">
-  <h1>Sastrería</h1>
-  <div class="row">
-    <div class="col">
-      <p>Bordados Infantes es un taller de ornamentos para la liturgia y aderezo de imagenes de
-        culto totalmente artesano y con más de 25 años de vida. Trabajamos de forma tradicinal nuestras prendas,
-        poniendo
-        todo esmero y cuidado para conseguir las mejores
-        resultadosen nuestros trabajos.</p>
-    </div>
-    <div class="col">
-      <gallery style="background-color: F6E4F9; width:auto;" [items]="items" thumbPosition="left" disablethumb="false"
-        imageSize="cover">
-      </gallery>
-    </div>
-  </div>
-</div>
-<!--Cordonería-->
-<div class="container-fluid g-box" style="background-color: #C09CCD;">
-  <h1>Cordonería</h1>
-  <div class="row">
-    <div class="col">
-      <gallery style="background-color: hsl(300, 16%, 96%); width:auto;" [items]="items" thumbPosition="right"
-        disablethumb="false" imageSize="cover">
-      </gallery>
-    </div>
-    <div class="col">
-      <p>Bordados Infantes es un taller de ornamentos para la liturgia y aderezo de imagenes de
-        culto totalmente artesano y con más de 25 años de vida. Trabajamos de forma tradicinal nuestras prendas,
-        poniendo
-        todo esmero y cuidado para conseguir las mejores
-        resultadosen nuestros trabajos.</p>
-    </div>
-  </div>
-</div>
-<!--Iconos bizantinos-->
-<div class="container-fluid" g-box style=" background-color: #F6E4F9">
-  <h1>Iconos bizantinos</h1>
-  <div class="row">
-    <div class="col">
-      <p>Bordados Infantes es un taller de ornamentos para la liturgia y aderezo de imagenes de
-        culto totalmente artesano y con más de 25 años de vida. Trabajamos de forma tradicinal nuestras prendas,
-        poniendo
-        todo esmero y cuidado para conseguir las mejores
-        resultadosen nuestros trabajos.</p>
-    </div>
-    <div class="col">
-      <gallery style="background-color: hsl(300, 16%, 96%); width:auto;" [items]="items" thumbPosition="left"
-        disablethumb="false" imageSize="cover">
-      </gallery>
-    </div>
-  </div>
-</div>
-<!--Restauración-->
-<div class="container-fluid g-box" style="background-color: #C09CCD;">
-  <h1>Restauracion</h1>
-  <div class="row">
-    <div class="col">
-      <gallery style="background-color: hsl(300, 16%, 96%); width:auto;" [items]="items" thumbPosition="left"
-        disablethumb="false" imageSize="cover">
-      </gallery>
-    </div>
-    <div class="col">
-      <p>Bordados Infantes es un taller de ornamentos para la liturgia y aderezo de imagenes de
-        culto totalmente artesano y con más de 25 años de vida. Trabajamos de forma tradicinal nuestras prendas,
-        poniendo
-        todo esmero y cuidado para conseguir las mejores
-        resultadosen nuestros trabajos.</p>
     </div>
   </div>
 </div>
