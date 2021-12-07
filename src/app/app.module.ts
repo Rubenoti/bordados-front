@@ -15,10 +15,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LightboxModule } from 'ng-gallery/lightbox';
 import { ConocemeComponent } from './conoceme/conoceme.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavbarComponent, FooterComponent, ConocemeComponent, ContactoComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    NavbarComponent,
+    FooterComponent,
+    ConocemeComponent,
+    ContactoComponent,
+  ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,

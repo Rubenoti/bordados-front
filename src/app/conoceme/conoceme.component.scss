@@ -21,10 +21,70 @@
 }
 .principal {
   padding-top: 5%;
+
   .img {
+    padding-bottom: 5%;
   }
   .imgText {
     font-size: 1.2rem;
     font-family: "Quintessential", cursive;
   }
+}
+.mainText {
+  padding: 10%;
+  font-size: 1.3rem;
+  font-family: "Quintessential", cursive;
+}
+
+.contacto {
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Quintessential", cursive;
+  background: linear-gradient(
+    270deg,
+    rgba(231, 142, 220, 0.029) 17.14%,
+    rgba(228, 29, 101, 0.29) 48.69%,
+    rgba(224, 128, 213, 0.029) 81.59%
+  );
+  text-align: center;
+  padding: 10px;
+  h2 {
+    padding: 2%;
+  }
+  .contactButton {
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 500ms ease;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+      opacity: 1;
+      background-color: white;
+    }
+    &:before {
+      position: absolute;
+      top: 11px;
+      left: -30px;
+      transition: all 300ms ease;
+    }
+  }
+}
+.item {
+  padding-top: 7%;
+  font-size: 2rem;
+  font-family: "Quintessential", cursive;
+  color: rgb(33, 5, 53);
+}
+
+.forTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Quintessential", cursive;
+  text-align: center;
+  padding: 5%;
 }
