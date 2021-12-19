@@ -12,45 +12,52 @@ import {
   styleUrls: ['./contacto.component.scss'],
 })
 export class ContactoComponent implements OnInit {
-  registerForm!: FormGroup;
+  contactForm!: FormGroup;
   submitted = false;
 
   constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
-    this.registerForm = this.formBuilder.group({
+    this.contactForm = this.formBuilder.group({
       firstName: [
         '',
-        Validators.required,
-        Validators.maxLength(20),
-        Validators.minLength(3),
+        [
+          Validators.required,
+          Validators.maxLength(20),
+          Validators.minLength(3),
+        ],
       ],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       phone: [
         '',
-        Validators.required,
-        Validators.minLength(9),
-        Validators.pattern('^[0-9]*$'),
+        [
+          Validators.required,
+          Validators.minLength(9),
+          Validators.maxLength(9),
+          Validators.pattern('^[0-9]*$'),
+        ],
       ],
       city: ['', Validators.required],
-      zipCode: ['', Validators.required, Validators.pattern('^[0-9]*$')],
+      zipCode: ['', [Validators.required, Validators.pattern('^[0-9]*$')]],
       address: ['', Validators.required],
       acceptTerms: [false, Validators.requiredTrue],
     });
   }
   get f() {
-    return this.registerForm.controls;
+    return this.contactForm.controls;
   }
 
   onSubmit() {
     this.submitted = true;
-    if (this.registerForm.invalid) {
-      return;
+    if (this.contactForm.invalid) {
+      console.log('invalid');
+    } else {
+      console.log('valid');
     }
   }
   onReset() {
     this.submitted = false;
-    this.registerForm.reset();
+    this.contactForm.reset();
   }
 }

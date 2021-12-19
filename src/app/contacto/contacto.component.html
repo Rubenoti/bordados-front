@@ -1,96 +1,99 @@
-<div class="card m-3">
-  <h5 class="card-header">Angular 10 Reactive Form Validation</h5>
-  <div class="card-body">
-    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-      <div class="form-row">
-
-        <div class="form-group col-5">
-          <label>Nombre</label>
-          <input type="text" formControlName="firstName" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
-          <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
-            <div *ngIf="f.firstName.errors.required">Falta tu nombre</div>
+<div class="container-fluid main" style="background-color: hsl(291, 64%, 94%);">
+  <div class="card m-3 " style="background-color: hsl(291, 64%, 94%);">
+    <h5 class="card-header">Gracias por contactar conmigo!</h5>
+    <div class="card-body">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" style="background-color: hsl(291, 64%, 94%);">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" formControlName="firstName" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstName.errors.required">Falta tu nombre</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Apellidos</label>
+            <input type="text" formControlName="lastName" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+              <div *ngIf="f.lastName.errors.required">Faltan tus apellidos</div>
+            </div>
           </div>
         </div>
-        <div class="form-group col-5">
-          <label>Apellidos</label>
-          <input type="text" formControlName="lastName" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
-          <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
-            <div *ngIf="f.lastName.errors.required">Faltan tus apellidos</div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label>Email</label>
+            <input type="text" formControlName="email" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Falta tu email</div>
+              <div *ngIf="f.email.errors.email">Este email es incorrecto</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col">
-          <label>Email</label>
-          <input type="text" formControlName="email" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
-          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-            <div *ngIf="f.email.errors.required">Falta tu email</div>
-            <div *ngIf="f.email.errors.email">Este email es incorrecto</div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label>Teléfono</label>
+            <input type="text" formControlName="phone" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+            <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+              <div *ngIf="f.phone.errors.required">Falta tu teléfono</div>
+              <div *ngIf="f.phone.errors.minlength || f.phone.errors.maxlength || f.phone.errors.pattern">Este teléfono
+                es
+                incorrecto</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col">
-          <label>Teléfono</label>
-          <input type="text" formControlName="phone" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
-          <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
-            <div *ngIf="f.phone.errors.required">Falta tu teléfono</div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label>Ciudad</label>
+            <input type="text" formControlName="city" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.city.errors }" />
+            <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+              <div *ngIf="f.city.errors.required">Falta tu ciudad</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col">
-          <label>Ciudad</label>
-          <input type="text" formControlName="city" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && f.city.errors }" />
-          <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
-            <div *ngIf="f.city.errors.required">Falta tu ciudad</div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label>Código postal</label>
+            <input type="text" formControlName="zipCode" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.zipCode.errors }" />
+            <div *ngIf="submitted && f.zipCode.errors" class="invalid-feedback">
+              <div *ngIf="f.zipCode.errors.required">Falta tu código postal</div>
+              <div *ngIf="f.zipCode.errors.pattern">Codigo postal erroneo</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col">
-          <label>Código postal</label>
-          <input type="text" formControlName="zipCode" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && f.zipCode.errors }" />
-          <div *ngIf="submitted && f.zipCode.errors" class="invalid-feedback">
-            <div *ngIf="f.zipCode.errors.required">Falta tu código postal</div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label>Dirección</label>
+            <input type="text" formControlName="address" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />
+            <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+              <div *ngIf="f.address.errors.required">Falta tu dirección</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col">
-          <label>Dirección</label>
-          <input type="text" formControlName="address" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />
-          <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
-            <div *ngIf="f.address.errors.required">Falta tu dirección</div>
+        <div class="form-group form-check" style="padding:1%;">
+          <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input"
+            [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+          <label for="acceptTerms" class="form-check-label">Aceptar terminos y condiciones</label>
+          <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Es necesario aceptar los terminos y
+            condiciones para continuar</div>
+        </div>
+        <div class="form-group" style="padding-bottom:2%;">
+          <label class="control-label">Descripción</label>
+          <div class="inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+              <textarea class="form-control" name="comment" placeholder="Breve descripción aqui"></textarea>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input"
-          [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
-        <label for="acceptTerms" class="form-check-label">Aceptar terminos y condiciones</label>
-        <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Es necesario aceptar los terminos y
-          condiciones para continuar</div>
-      </div>
-      <div class="form-group">
-        <label class="control-label">Descripción</label>
-        <div class="inputGroupContainer">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-            <textarea class="form-control" name="comment" placeholder="Breve descripción aqui"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="text-center">
-        <button class="btn btn-primary mr-1">Enviar</button>
-      </div>
-    </form>
+        <button class="btn"><span>Enviar!</span></button>
+      </form>
+    </div>
   </div>
 </div>
